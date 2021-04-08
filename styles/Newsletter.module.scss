@@ -26,4 +26,18 @@
     margin-right: 25px;
     font-family: 'Poppins';
   }
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    input {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    grid-column: 1 / 13;
+  }
 }

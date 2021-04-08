@@ -9,8 +9,23 @@
 
 .illustration {
   grid-column: 7 / 13;
+  @media (max-width: 425px) {
+    grid-column: 1 / 13;
+    order: -1;
+  }
 }
 
 .section {
   margin-bottom: 270px;
+
+  @media (max-width: 425px) {
+    margin-bottom: 100px;
+  }
+}
+
+.content,
+.illustration {
+  @media (max-width: 425px) {
+    grid-column: 1 / 13;
+  }
 }

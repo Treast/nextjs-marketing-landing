@@ -5,6 +5,19 @@
 
 .illustration {
   grid-column: 1 / 6;
+
+  img {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.content,
+.illustration {
+  @media (max-width: 425px) {
+    grid-column: 1 / 13;
+  }
 }
 
 .background {
@@ -26,4 +39,8 @@
 
 .section {
   margin-bottom: 270px;
+
+  @media (max-width: 425px) {
+    margin-bottom: 100px;
+  }
 }

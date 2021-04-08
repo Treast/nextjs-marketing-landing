@@ -5,6 +5,16 @@
   padding: 20px 30px;
   margin-bottom: 110px;
   background-color: #fff;
+
+  @media (max-width: 768px) {
+    grid-column: span 6;
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: 425px) {
+    grid-column: 1 / 13;
+    margin-bottom: 30px;
+  }
 }
 
 .p {

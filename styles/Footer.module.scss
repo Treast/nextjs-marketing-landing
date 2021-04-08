@@ -1,6 +1,10 @@
 .section {
   position: relative;
   padding: 230px 0 90px;
+
+  @media (max-width: 1024px) {
+    padding: 100px 0 20px;
+  }
 }
 
 .background {
@@ -33,6 +37,10 @@
   @media (max-width: 1200px) {
     grid-column: span 6;
   }
+
+  @media (max-width: 425px) {
+    grid-column: span 12;
+  }
 }
 
 .socials {
@@ -51,6 +59,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
   }
 }
 
@@ -78,6 +88,18 @@
 
       img {
         margin-right: 7px;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    h3 {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      li {
+        line-height: 28px;
       }
     }
   }
