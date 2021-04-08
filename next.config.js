@@ -7,8 +7,8 @@ module.exports = withPlugins([
   [
     optimizedImages,
     {
-      basePath: isProd ? '/next/marketing-landing' : '',
-      assetPrefix: isProd ? '/next/marketing-landing' : '',
+      basePath: isProd ? '/nextjs-marketing-landing' : '',
+      assetPrefix: isProd ? '/nextjs-marketing-landing' : '',
     },
   ],
 ]);
