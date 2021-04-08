@@ -9,6 +9,13 @@
 
 .illustration {
   grid-column: 7 / 13;
+
+  img {
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+
   @media (max-width: 425px) {
     grid-column: 1 / 13;
     order: -1;

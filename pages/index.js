@@ -20,9 +20,10 @@ export default function Home() {
   const bodyRef = useRef(null);
 
   useEffect(() => {
-    Scrollbar.init(bodyRef.current, {
+    const scrollbar = Scrollbar.init(bodyRef.current, {
       damping: 0.08,
     });
+    scrollbar.track.xAxis.element.remove();
   }, []);
 
   return (
