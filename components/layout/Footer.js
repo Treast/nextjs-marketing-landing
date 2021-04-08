@@ -84,16 +84,16 @@ export default function Footer() {
               <li>
                 <img src={require('@/public/images/icons/envelope.svg')} width='16' height='12' /> info@email.com
               </li>
-              <li>
+              <li className={styles.map}>
                 <img src={require('@/public/images/icons/maps-and-flags.svg')} width='11' height='15' /> New York, US
               </li>
             </ul>
           </div>
         </div>
       </div>
-      {/* <div className={styles.background}>
-        <Image src='/images/bg_footer.svg' width='1600' height='570' />
-      </div> */}
+      <div className={styles.background}>
+        <img src={require('@/public/images/bg_footer.svg')} width='1600' height='570' />
+      </div>
     </footer>
   );
 }
