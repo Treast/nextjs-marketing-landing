@@ -1,0 +1,28 @@
+.card {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 50px 40px;
+  grid-column: span 4;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(#7e76f9, 0.15);
+}
+
+.product {
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 37px;
+  margin-bottom: 70px;
+}
+
+.description {
+  color: #7a839e;
+  margin-bottom: 35px;
+}
+
+.price {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 46px;
+  color: #7e76f9;
+  margin-bottom: 40px;
+}

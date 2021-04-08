@@ -1,0 +1,22 @@
+.wrapper {
+  display: inline-block;
+  background-color: #7e76f9;
+  box-shadow: 0 7px 6px rgba(#7e76f9, 0.26);
+  padding: 13px 42px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+
+  &--xs {
+    font-size: 12px;
+    padding: 6px 20px;
+  }
+
+  &--outlined {
+    border: 1px solid #7e76f9;
+    background-color: #fff;
+    color: #42495b;
+    box-shadow: none;
+  }
+}

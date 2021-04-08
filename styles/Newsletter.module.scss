@@ -1,0 +1,29 @@
+.section {
+  margin: 135px auto 100px;
+}
+
+.title {
+  grid-column: 1 / 13;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+  grid-column: 3 / 11;
+
+  input {
+    background-color: #f6f7fb;
+    padding: 18px 30px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    flex-grow: 1;
+    margin-right: 25px;
+    font-family: 'Poppins';
+  }
+}

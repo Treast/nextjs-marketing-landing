@@ -1,0 +1,23 @@
+.content {
+  position: relative;
+  grid-column: 7 / 13;
+}
+
+.illustration {
+  grid-column: 1 / 6;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.section {
+  margin-bottom: 270px;
+}
