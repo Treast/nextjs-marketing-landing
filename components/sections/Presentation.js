@@ -1,10 +1,9 @@
 import React from 'react';
-import Image from 'next/image';
 
-import Button from '../Button';
+import Button from '@/components/Button';
 
-import layoutStyles from '../../styles/Layout.module.scss';
-import styles from '../../styles/Presentation.module.scss';
+import layoutStyles from '@/styles/Layout.module.scss';
+import styles from '@/styles/Presentation.module.scss';
 
 export default function Presentation() {
   return (
@@ -16,7 +15,7 @@ export default function Presentation() {
           <Button text='Get a free audit' href='#' />
         </div>
         <div className={styles.illustration}>
-          <Image src='/images/presentation_illustration.svg' height='470' width='587' />
+          <img src={require('@/public/images/presentation_illustration.svg')} height='470' width='587' />
         </div>
       </div>
     </section>

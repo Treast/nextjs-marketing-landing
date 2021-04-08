@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Price from '../Price';
+import Price from '@/components/Price';
 
-import layoutStyles from '../../styles/Layout.module.scss';
-import styles from '../../styles/Prices.module.scss';
+import layoutStyles from '@/styles/Layout.module.scss';
+import styles from '@/styles/Prices.module.scss';
 
 export default function Prices() {
   return (

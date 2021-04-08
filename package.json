@@ -14,7 +14,15 @@
     "react-dom": "17.0.2"
   },
   "devDependencies": {
+    "image-trace-loader": "^1.0.2",
+    "imagemin-svgo": "^9.0.0",
+    "lqip-loader": "^2.1.1",
+    "next-compose-plugins": "^2.2.1",
+    "next-optimized-images": "^2.6.2",
     "node-sass": "^5.0.0",
-    "sass": "^1.32.8"
+    "responsive-loader": "^2.3.0",
+    "sass": "^1.32.8",
+    "svg-sprite-loader": "^6.0.2",
+    "webp-loader": "^0.6.0"
   }
 }

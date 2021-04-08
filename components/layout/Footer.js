@@ -1,11 +1,8 @@
 import React from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 
-import Button from '../Button';
-
-import layoutStyles from '../../styles/Layout.module.scss';
-import styles from '../../styles/Footer.module.scss';
+import layoutStyles from '@/styles/Layout.module.scss';
+import styles from '@/styles/Footer.module.scss';
 
 export default function Footer() {
   return (
@@ -13,27 +10,27 @@ export default function Footer() {
       <div className={layoutStyles.container}>
         <div className={layoutStyles.grid}>
           <div className={styles.socials}>
-            <Image src='/images/logo-white.svg' width='111' height='67' />
+            <img src={require('@/public/images/logo-white.svg')} width='111' height='67' />
             <h2>Stay in touch</h2>
             <ul>
               <li>
                 <Link href='#'>
-                  <Image src='/images/icons/facebook.svg' width='9' height='18' />
+                  <img src={require('@/public/images/icons/facebook.svg')} width='9' height='18' />
                 </Link>
               </li>
               <li>
                 <Link href='#'>
-                  <Image src='/images/icons/google-plus.svg' width='20' height='16' />
+                  <img src={require('@/public/images/icons/google-plus.svg')} width='20' height='16' />
                 </Link>
               </li>
               <li>
                 <Link href='#'>
-                  <Image src='/images/icons/twitter.svg' width='23' height='18' />
+                  <img src={require('@/public/images/icons/twitter.svg')} width='23' height='18' />
                 </Link>
               </li>
               <li>
                 <Link href='#'>
-                  <Image src='/images/icons/instagram.svg' width='17' height='17' />
+                  <img src={require('@/public/images/icons/instagram.svg')} width='17' height='17' />
                 </Link>
               </li>
             </ul>
@@ -82,13 +79,13 @@ export default function Footer() {
             <h3>Contact</h3>
             <ul>
               <li>
-                <Image src='/images/icons/old-handphone.svg' width='15' height='15' /> 000-000-0000
+                <img src={require('@/public/images/icons/old-handphone.svg')} width='15' height='15' /> 000-000-0000
               </li>
               <li>
-                <Image src='/images/icons/envelope.svg' width='16' height='12' /> info@email.com
+                <img src={require('@/public/images/icons/envelope.svg')} width='16' height='12' /> info@email.com
               </li>
               <li>
-                <Image src='/images/icons/maps-and-flags.svg' width='11' height='15' /> New York, US
+                <img src={require('@/public/images/icons/maps-and-flags.svg')} width='11' height='15' /> New York, US
               </li>
             </ul>
           </div>

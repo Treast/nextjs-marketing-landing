@@ -1,9 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 
-import layoutStyles from '../../styles/Layout.module.scss';
-import styles from '../../styles/Navigation.module.scss';
+import layoutStyles from '@/styles/Layout.module.scss';
+import styles from '@/styles/Navigation.module.scss';
 
 export default function Navigation() {
   return (
@@ -11,7 +10,7 @@ export default function Navigation() {
       <div className={layoutStyles.container}>
         <div className={layoutStyles.grid}>
           <div className={styles.logo}>
-            <Image src='/images/logo.svg' height='67' width='120' />
+            <img src={require('@/public/images/logo.svg')} height='67' width='120' />
           </div>
           <nav className={styles.navigation}>
             <ul>
@@ -33,7 +32,7 @@ export default function Navigation() {
       </div>
 
       <div className={styles.shape}>
-        <Image src='/images/bg_shape_navigation.svg' height='700' width='876' />
+        <img src={require('@/public/images/bg_shape_navigation.svg')} height='700' width='876' />
       </div>
     </header>
   );

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import Button from '../Button';
+import Button from '@/components/Button';
 
-import layoutStyles from '../../styles/Layout.module.scss';
-import styles from '../../styles/Newsletter.module.scss';
+import layoutStyles from '@/styles/Layout.module.scss';
+import styles from '@/styles/Newsletter.module.scss';
 
 export default function Newsletter() {
   return (

@@ -1,7 +1,8 @@
 import React from 'react';
-import Button from './Button';
 
-import styles from '../styles/Price.module.scss';
+import Button from '@/components/Button';
+
+import styles from '@/styles/Price.module.scss';
 
 export default function Price({ product, children, price }) {
   return (

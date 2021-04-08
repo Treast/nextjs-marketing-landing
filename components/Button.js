@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-import styles from '../styles/Button.module.scss';
+import styles from '@/styles/Button.module.scss';
 
 export default function Button({ text, href, size = 'md', outline = false }) {
   return (

@@ -1,17 +1,16 @@
 import React from 'react';
-import Image from 'next/image';
 
-import Button from '../Button';
+import Button from '@/components/Button';
 
-import layoutStyles from '../../styles/Layout.module.scss';
-import styles from '../../styles/Biography.module.scss';
+import layoutStyles from '@/styles/Layout.module.scss';
+import styles from '@/styles/Biography.module.scss';
 
 export default function Biography() {
   return (
     <section className={`${layoutStyles.container} ${styles.section}`}>
       <div className={layoutStyles.grid}>
         <div className={styles.illustration}>
-          <Image src='/images/biography_illustration.svg' height='440' width='600' />
+          <img src={require('@/public/images/biography_illustration.svg')} height='440' width='600' />
         </div>
         <div className={styles.content}>
           <h3>Biography</h3>
@@ -24,7 +23,7 @@ export default function Biography() {
           </p>
           <Button text='See more' href='#' />
           <div className={styles.background}>
-            <Image src='/images/bg_biography.svg' height='866' width='627' />
+            <img src={require('@/public/images/bg_biography.svg')} height='866' width='627' />
           </div>
         </div>
       </div>
