@@ -1,4 +1,7 @@
+import { useRef, useEffect } from 'react';
 import Head from 'next/head';
+import Scrollbar from 'smooth-scrollbar';
+
 import { useRouter } from 'next/router';
 
 import layoutStyles from '@/styles/Layout.module.scss';
@@ -14,8 +17,16 @@ import Footer from '@/components/layout/Footer';
 export default function Home() {
   const router = useRouter();
 
+  const bodyRef = useRef(null);
+
+  useEffect(() => {
+    Scrollbar.init(bodyRef.current, {
+      damping: 0.08,
+    });
+  }, []);
+
   return (
-    <div className={layoutStyles.app}>
+    <div data-scrollbar className={layoutStyles.app} ref={bodyRef}>
       <Head>
         <title>NextJS - Marketing Landing</title>
         <link rel='icon' href={`${router.basePath}/favicon.ico`} />

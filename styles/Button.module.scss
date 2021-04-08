@@ -1,12 +1,20 @@
 .wrapper {
   display: inline-block;
-  background-color: #7e76f9;
   box-shadow: 0 7px 6px rgba(#7e76f9, 0.26);
   padding: 13px 42px;
   border-radius: 25px;
   text-transform: uppercase;
   color: #fff;
+  background-color: #7e76f9;
   font-weight: 500;
+
+  box-shadow: 0 7px 6px rgba(#7e76f9, 0.26);
+  transition: background 0.4s ease, color 0.4s ease, box-shadow 0.4s ease;
+
+  &:hover {
+    background-color: #fff;
+    color: #42495b;
+  }
 
   &--xs {
     font-size: 12px;
@@ -18,5 +26,11 @@
     background-color: #fff;
     color: #42495b;
     box-shadow: none;
+
+    &:hover {
+      color: #fff;
+      background-color: #7e76f9;
+      box-shadow: 0 7px 6px rgba(#7e76f9, 0.26);
+    }
   }
 }

@@ -32,6 +32,11 @@
         color: white;
         text-transform: uppercase;
         font-weight: 500;
+        transition: color 0.4s ease;
+
+        &:hover {
+          color: #42495b;
+        }
       }
     }
   }
