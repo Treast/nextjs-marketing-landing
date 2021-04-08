@@ -1,0 +1,1 @@
+_N_E=(window.webpackJsonp_N_E=window.webpackJsonp_N_E||[]).push([[5],{"1HF/":function(n,r,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/_error",function(){return _("Y0NT")}])},Y0NT:function(n,r,_){"use strict";_.r(r);var o=_("nKUr");r.default=function(){return Object(o.jsx)("div",{children:"Error 404"})}}},[["1HF/",0,2,1]]]);
